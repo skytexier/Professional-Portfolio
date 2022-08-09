@@ -1,0 +1,120 @@
+/* Universal Styling, Background Image */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --gradient:linear-gradient(
+        rgb(209, 49, 110) 0%,
+        rgb(219, 85, 23) 100%); 
+
+}
+
+body { 
+    background-image: var(--gradient)
+
+}
+
+/* Header / Nav */
+
+header { 
+    background-image: url("/images/A76777_A76777_022.jpg");
+    background-color: rgba(139, 138, 138, 0.493);
+    background-position: 150px 800px;
+    background-size: center;
+    border: 7px solid rgb(3, 1, 5);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    height: 220px;
+}
+
+/* Headshot */
+.headfig {
+    width: 150px;
+}
+
+.headshot {
+    width: 150px;
+    height: 200px;
+    border-radius: 5%;
+    margin: 0px 0px;
+    object-fit: cover;
+    border: 5px solid rgb(236,170,103);
+    margin: 5px;
+}
+
+/* Nav Bar Links and h1 */
+
+a {
+    color: rgb(226, 164, 136);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+header li a:hover {
+    color: rgb(230, 146, 62);
+}
+
+nav {
+    color:rgb(226, 164, 136);
+    margin: auto;
+    padding: 10px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+
+}
+
+nav ul {
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 30px;
+}
+nav li {
+    font-size: 35px;
+    background-color: rgb(40,13,8);
+    padding: 3px 10px
+}
+
+/* H1-4 Styling */
+
+.namestyle {
+    font-size: 55px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    position: absolute;
+    top: 75px;
+    left: 150px;
+    padding: 5px 5px;
+    border-left: none;
+    background-color: rgb(236,170,103);
+
+
+}
+
+.hero {
+    max-width: 1000px;
+    max-height: 600px;
+    object-fit: cover;
+    margin: 10px 0 10px auto;
+    border: 10px solid rgb(58, 58, 58);
+    display: flex;
+}
+
+aside {
+    margin: 10px 10px;
+    height: auto;
+    width: 350px;
+    border-right: 5px solid black;
+}
