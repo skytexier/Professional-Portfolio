@@ -24,7 +24,7 @@ body {
 /* Header / Nav */
 
 header { 
-    background-image: url("/images/A76777_A76777_022.jpg");
+    background-image: url("../images/headerbackground.jpg");
     background-color: rgba(139, 138, 138, 0.493);
     background-position: 150px 800px;
     background-size: center;
@@ -87,9 +87,7 @@ nav li {
     background-color: rgb(40,13,8);
     padding: 3px 10px
 }
-
-/* H1-4 Styling */
-
+/* Name Box */
 .namestyle {
     font-size: 55px;
     color: rgb(0, 0, 0);
@@ -100,17 +98,23 @@ nav li {
     padding: 5px 5px;
     border-left: none;
     background-color: rgb(236,170,103);
-
-
 }
+
+
 /* App Cards / Main Section */
 
 .appcards{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    right: 100px;
+    justify-content: space-evenly;
+}
+
+.appcards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .hero {
@@ -141,8 +145,16 @@ nav li {
 .cards {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     height: 350px;
     
+}
+
+.cards a {
+    max-height: 300px;
+    border-radius: 25px;
+    color: black;
 }
 
 .cardsmall {
@@ -160,16 +172,17 @@ nav li {
     max-height: 30px;
     border: 5px solid rgb(0, 0, 0);
     position: relative;
-    left: 30px;
-    top: -75px;
+    left: 5px;
+    top: -50px;
     text-align: center;
     color: black;
 }
 
-.cards :hover {
+.cards img :hover {
 
-    object-fit: contain;
-    background-color: aqua;
+    object-fit: scale-down;
+    box-shadow: inset 5px 5px 100px;
+    background-color: rgba(61, 61, 61, 0.425);
 
 
 }
