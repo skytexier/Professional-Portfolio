@@ -42,12 +42,11 @@ header {
 }
 
 .headshot {
-    width: 150px;
     height: 200px;
     border-radius: 5%;
     margin: 10px 10px;
-    object-fit: cover;
-    border: 8px solid rgb(236,170,103);
+    object-fit: scale-down;
+    border: 4px solid rgb(236,170,103);
 }
 
 /* Name Box */
@@ -57,7 +56,7 @@ header {
     margin: 10px;
     position: absolute;
     top: 75px;
-    left: 150px;
+    left: 135px;
     padding: 5px 5px;
     border-left: none;
     background-color: rgb(236,170,103);
@@ -200,13 +199,14 @@ nav a:hover {
     border: 10px solid black;
     border-radius: 10px;
     object-fit: cover;
+    filter: brightness(75%);
 }
 
 .smcardtext {
     background-color: rgb(230, 146, 62);
     font-size: 20px;
-    width: 200px;
-    max-height: 30px;
+    width: auto;
+    max-height: 35px;
     border: 5px solid rgb(0, 0, 0);
     position: relative;
     left: 5px;
@@ -215,11 +215,9 @@ nav a:hover {
     color: black;
 }
 
-.cards img :hover {
-
-    object-fit: scale-down;
-    box-shadow: inset 5px 5px 100px;
-    background-color: rgba(61, 61, 61, 0.425);
+.appcards :hover {
+    filter: brightness(100%);
+    filter: saturate(130%);
 
 
 }
