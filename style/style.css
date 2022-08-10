@@ -13,10 +13,12 @@
         rgb(219, 85, 23) 100%); 
 
 }
-
+/* Background gradient styling */
 body { 
-    background-image: var(--gradient)
-
+    background-image: var(--gradient);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Header / Nav */
@@ -34,7 +36,7 @@ header {
     height: 220px;
 }
 
-/* Headshot */
+/* Headshot Border and Box styling*/
 .headfig {
     width: 150px;
 }
@@ -43,15 +45,14 @@ header {
     width: 150px;
     height: 200px;
     border-radius: 5%;
-    margin: 0px 0px;
+    margin: 10px 10px;
     object-fit: cover;
     border: 5px solid rgb(236,170,103);
-    margin: 5px;
 }
 
 /* Nav Bar Links and h1 */
 
-a {
+.navlinks a {
     color: rgb(226, 164, 136);
 }
 
@@ -71,7 +72,7 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
-    top: -50px;
+    top: -65px;
 
 }
 
@@ -92,7 +93,7 @@ nav li {
 .namestyle {
     font-size: 55px;
     color: rgb(0, 0, 0);
-    margin: 5px;
+    margin: 10px;
     position: absolute;
     top: 75px;
     left: 150px;
@@ -102,19 +103,104 @@ nav li {
 
 
 }
+/* App Cards / Main Section */
+
+.appcards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    right: 100px;
+}
 
 .hero {
-    max-width: 1000px;
+    width: 1200px;
     max-height: 600px;
     object-fit: cover;
-    margin: 10px 0 10px auto;
-    border: 10px solid rgb(58, 58, 58);
-    display: flex;
+    border: 10px solid rgb(236,170,103);
+    margin-top: 20px;
 }
 
-aside {
+.figcard {
+    background-color: rgb(40,13,8);
+    font-size: 40px;
+    border: 5px solid rgb(236,170,103);
+    top: -100px;
+    left: 6px;
+    padding: 5px 5px;
+    position: relative;
+    width: fit-content;
+}
+
+.figcard a {
+    color: rgb(226, 164, 136);
+}
+
+
+/* Small Cards / Card Section Two */
+.cards {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    
+}
+
+.cardsmall {
+    width: 800px;
+    max-height: 300px;
+    border: 10px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.smcardtext {
+    background-color: rgb(230, 146, 62);
+    font-size: 20px;
+    width: 200px;
+    max-height: 30px;
+    border: 5px solid rgb(0, 0, 0);
+    position: relative;
+    left: 30px;
+    top: -75px;
+    text-align: center;
+    color: black;
+}
+
+.cards :hover {
+
+    object-fit: contain;
+    background-color: aqua;
+
+
+}
+/* About Me Section and Aside */
+
+.left-side {
     margin: 10px 10px;
     height: auto;
-    width: 350px;
+    width: auto;
+    display: flex;
+    max-width: 2000px;
+}
+
+.left-side h2 {
+    margin: 5px;
+    font-size: 50px;
+    border-right: 5px solid black;
+    height: 150px;
+    min-width: 300px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-side p {
+    margin: 20px 0px 20px 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
     border-right: 5px solid black;
 }
+
