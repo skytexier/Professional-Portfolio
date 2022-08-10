@@ -21,14 +21,14 @@ body {
     background-attachment: fixed;
 }
 
-/* Header / Nav */
+/* /* Header Styling */
 
 header { 
     background-image: url("../images/headerbackground.jpg");
     background-color: rgba(139, 138, 138, 0.493);
     background-position: 150px 800px;
     background-size: center;
-    border: 7px solid rgb(3, 1, 5);
+    border: 7px solid black;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -47,46 +47,9 @@ header {
     border-radius: 5%;
     margin: 10px 10px;
     object-fit: cover;
-    border: 5px solid rgb(236,170,103);
+    border: 8px solid rgb(236,170,103);
 }
 
-/* Nav Bar Links and h1 */
-
-.navlinks a {
-    color: rgb(226, 164, 136);
-}
-
-a:link {
-    text-decoration: none;
-}
-
-header li a:hover {
-    color: rgb(230, 146, 62);
-}
-
-nav {
-    color:rgb(226, 164, 136);
-    margin: auto;
-    padding: 10px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: -65px;
-
-}
-
-nav ul {
-    text-decoration: none;
-    display: inline-flex;
-    flex-direction: row;
-    gap: 30px;
-}
-nav li {
-    font-size: 35px;
-    background-color: rgb(40,13,8);
-    padding: 3px 10px
-}
 /* Name Box */
 .namestyle {
     font-size: 55px;
@@ -101,20 +64,84 @@ nav li {
 }
 
 
-/* App Cards / Main Section */
+/* Nav Bar / Links*/
 
-.appcards{
+.navbar {
+    color:rgb(226, 164, 136);
+    margin: auto;
+    padding: 10px;
+    width: auto;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    position: relative;
+    top: -65px;
+    max-height: auto;
+
 }
 
-.appcards{
+.navlinks {
+    text-decoration: none;
+    display: inline-flex;
+    gap: 30px;
+}
+
+.navlinks li {
+    font-size: 35px;
+    background-color: rgb(40,13,8);
+    padding: 3px 10px
+}
+
+.navlinks a {
+    color: rgb(226, 164, 136);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(230, 146, 62);
+}
+
+/* About Me */
+
+.left-side {
+    margin: 5px;
+    height: auto;
+    width: auto;
+    display: flex;
+    max-width: fit-content;
+}
+
+.left-side h2 {
+    font-size: 50px;
+    border-right: 5px solid black;
+    height: 150px;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-side p {
+    margin-left: 25px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    border-right: 5px solid black;
+}
+
+
+/* App Cards / Main Section */
+
+.appmain{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 25px;
 }
 
 .hero {
@@ -142,12 +169,22 @@ nav li {
 
 
 /* Small Cards / Card Section Two */
+
+.appcards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 50px;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 350px;
+    height: 300px;
     
 }
 
@@ -186,34 +223,5 @@ nav li {
 
 
 }
-/* About Me Section and Aside */
 
-.left-side {
-    margin: 10px 10px;
-    height: auto;
-    width: auto;
-    display: flex;
-    max-width: 2000px;
-}
-
-.left-side h2 {
-    margin: 5px;
-    font-size: 50px;
-    border-right: 5px solid black;
-    height: 150px;
-    min-width: 300px;
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.left-side p {
-    margin: 20px 0px 20px 20px;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    line-height: 1.5;
-    border-right: 5px solid black;
-}
 
