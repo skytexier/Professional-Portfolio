@@ -34,6 +34,7 @@ header {
     border-right: 0;
     width: 100%;
     height: 220px;
+    position: static;
 }
 
 /* Headshot Border and Box styling*/
@@ -161,8 +162,7 @@ nav a:hover {
 .hero {
     margin: 10px auto;
     width: 1250px;
-    height: 600px;
-    object-fit: fill;
+    object-fit: scale-down;
     border: 10px solid rgb(0, 0, 0);
     filter: brightness(75%);
 }
@@ -285,9 +285,9 @@ footer {
 }
 
 /* Media Rules */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
     .navbar {
-        position: static;
+
         flex-direction: row;
 
     }
@@ -313,11 +313,19 @@ footer {
           border: 0;
         }
     
-        .contactlinks{
+    .contactlinks{
         font-size: 25px;
         border: 0;
         gap: 0;
-        margin: 0;
+        margin: auto;
         flex-direction: column;
         }
+    main img{
+            max-width: 500px;
+        }
+    .appmain {
+        flex-direction: column;
+        align-content: center;
     }
+    }
+    
