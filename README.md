@@ -12,8 +12,6 @@ Some problems I came across were general styling issues and mix ups. It seems a 
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
-- [Examples of changes](#examples-of-changes)
 - [Credits](#credits)
 - [License](#license)
  
