@@ -21,7 +21,7 @@ body {
     background-attachment: fixed;
 }
 
-/* /* Header Styling */
+/* Header Styling */
 
 header { 
     background-image: url("../images/headerbackground.jpg");
@@ -46,27 +46,26 @@ header {
     border-radius: 5%;
     margin: 10px 10px;
     object-fit: scale-down;
-    border: 4px solid rgb(236,170,103);
+    border: 5px solid rgb(230, 146, 62);
 }
 
 /* Name Box */
 .namestyle {
-    font-size: 55px;
+    font-size: 75px;
     color: rgb(0, 0, 0);
     margin: 10px;
     position: absolute;
-    top: 75px;
-    left: 135px;
+    top: 55px;
+    left: 137px;
     padding: 5px 5px;
     border-left: none;
-    background-color: rgb(236,170,103);
+    background-color: rgb(230, 146, 62);
 }
 
 
 /* Nav Bar / Links*/
 
 .navbar {
-    color:rgb(226, 164, 136);
     margin: auto;
     padding: 10px;
     width: auto;
@@ -82,17 +81,17 @@ header {
 .navlinks {
     text-decoration: none;
     display: inline-flex;
-    gap: 30px;
+    gap: 50px;
 }
 
 .navlinks li {
     font-size: 35px;
-    background-color: rgb(40,13,8);
+    background-color: rgb(0, 0, 0);
     padding: 3px 10px
 }
 
 .navlinks a {
-    color: rgb(226, 164, 136);
+    color: rgb(230, 146, 62);
 }
 
 a:link {
@@ -100,69 +99,91 @@ a:link {
 }
 
 nav a:hover {
-    color: rgb(230, 146, 62);
+    color: rgb(209, 49, 110);
 }
 
 /* About Me */
 
 .left-side {
-    margin: 20px;
+    margin: 25px;
     height: auto;
     width: auto;
     display: flex;
-    max-width: fit-content;
 }
 
 .left-side h2 {
     font-size: 50px;
     border-right: 5px solid black;
-    height: 150px;
-    min-width: 300px;
+    height: 175px;
+    min-width: 350px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .left-side p {
-    margin-left: 25px;
+    margin-left: 35px;
     font-size: 22px;
     display: flex;
     align-items: center;
     line-height: 1.5;
-    border-right: 5px solid black;
-    margin-right: 300px;
+    margin-right: 250px;
+    text-align: center;
 }
 
 
 /* App Cards / Main Section */
-
 .appmain{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    height: auto;
+    margin: auto;
+    align-content: center;
+    
+}
+
+.mywork {
+    margin: 0 25px;
+    font-size: 50px;
+    border-right: 5px solid black;
+    height: relative;
+    min-width: 350px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heromain {
+    margin: 0px 54px;
 }
 
 .hero {
-    width: 1200px;
-    max-height: 600px;
-    object-fit: cover;
-    border: 10px solid rgb(236,170,103);
-    margin-top: 20px;
+    margin: 10px auto;
+    width: 1250px;
+    height: 600px;
+    object-fit: fill;
+    border: 10px solid rgb(0, 0, 0);
+    filter: brightness(75%);
 }
-
+/* Application Text Card for Hero image */
 .figcard {
-    background-color: rgb(40,13,8);
+    background-color: rgb(230, 146, 62);
     font-size: 40px;
-    border: 5px solid rgb(236,170,103);
+    border: 5px solid rgb(0, 0, 0);
     top: -100px;
-    left: 6px;
     padding: 5px 5px;
     position: relative;
     width: fit-content;
 }
+/* Hero hover styling */
+.heromain:hover {
+    filter: brightness(100%);
+    filter: saturate(130%);
+}
 
 .figcard a {
-    color: rgb(226, 164, 136);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -173,17 +194,19 @@ nav a:hover {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
-    width: 1450px;
-    margin: auto;
+    gap: 60px;
+    margin: 25px 370px 25px 360px;
+    max-width: 1400px;
 }
 
 .cards {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 200px;
+    height: 155px;
+    max-width: 550px;
     
 }
 
@@ -192,11 +215,11 @@ nav a:hover {
     border-radius: 25px;
     color: black;
 }
-
+/* Cards Image Styling */
 .cardsmall {
     width: 600px;
     max-height: 200px;
-    border: 10px solid black;
+    border: 9px solid black;
     border-radius: 10px;
     object-fit: cover;
     filter: brightness(75%);
@@ -227,15 +250,74 @@ nav a:hover {
     text-decoration:none;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     font-size: 40px;
-    gap: 150px;
-    margin-left: 25px;
+    
+    margin-left: 100px;
     color: black;
 }
 
 .contactlinks li {
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 15px;
+    margin-right: 50px;
 }
 
 .contactlinks a{
     color: black;
 }
+
+.contactlinks a:hover{
+    color: rgb(230, 146, 62);
+}
+.contactlinks :hover{
+    color: rgb(230, 146, 62);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 200px;
+}
+
+/* Media Rules */
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: static;
+        flex-direction: row;
+
+    }
+
+    .left-side{
+      flex-direction: column;
+    }
+
+    .left-side h2{
+        font-size: 60px;
+        border: 0;
+      }
+      .left-side p{
+        margin: 10px;
+      }
+
+    .appmain{
+        margin: auto;
+    }
+      
+    .mywork{
+          font-size: 60px;
+          border: 0;
+        }
+    
+        .contactlinks{
+        font-size: 25px;
+        border: 0;
+        gap: 0;
+        margin: 0;
+        flex-direction: column;
+        }
+    }
