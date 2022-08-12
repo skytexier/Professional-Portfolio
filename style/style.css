@@ -253,11 +253,12 @@ nav a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 40px;
-    
     margin-left: 100px;
     color: black;
 }
-
+.contactlinks ul{
+    max-width: 10px;
+}
 .contactlinks li {
     padding: 5px;
     border: 5px solid black;
@@ -294,6 +295,7 @@ footer {
 
     .left-side{
       flex-direction: column;
+      margin: 0;
     }
 
     .left-side h2{
@@ -311,8 +313,11 @@ footer {
     .mywork{
           font-size: 60px;
           border: 0;
+          margin: 0;
         }
-    
+    .contact {
+        margin: 0;
+    }
     .contactlinks{
         font-size: 25px;
         border: 0;
